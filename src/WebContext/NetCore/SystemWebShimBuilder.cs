@@ -3,5 +3,5 @@
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public record SystemWebShimBuilder(IServiceCollection Services);
+    internal record SystemWebShimBuilder(IServiceCollection Services);
 }

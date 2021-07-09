@@ -5,7 +5,7 @@ using System;
 
 namespace WebContext
 {
-    public class SessionShimOptions
+    internal class SessionShimOptions
     {
         public TimeSpan SessionAge { get; set; } = TimeSpan.FromMinutes(20);
 

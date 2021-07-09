@@ -8,6 +8,9 @@ namespace WebContext
     /// </summary>
     public interface IHttpContext
     {
+        /// <summary>
+        /// Gets the request of the current context.
+        /// </summary>
         IRequest Request { get; }
     }
 }

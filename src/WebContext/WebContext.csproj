@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>library</OutputType>
     <TargetFrameworks>net5.0;net6.0;netcoreapp3.1;net45</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">

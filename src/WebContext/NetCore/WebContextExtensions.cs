@@ -1,13 +1,13 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-using System;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using System;
 using WebContext;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class WebContextExtensions
+    internal static class WebContextExtensions
     {
         public static SystemWebShimBuilder AddSystemWebShim(this IServiceCollection services)
             => new SystemWebShimBuilder(services);

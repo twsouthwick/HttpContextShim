@@ -3,8 +3,14 @@
 
 namespace WebContext
 {
+    /// <summary>
+    /// A framework-independent abstraction of a request object.
+    /// </summary>
     public interface IRequest
     {
+        /// <summary>
+        /// Gets the request UserAgent string.
+        /// </summary>
         string UserAgent { get; }
     }
 }
