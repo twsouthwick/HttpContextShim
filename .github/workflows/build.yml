@@ -13,8 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET
+    - name: Setup .NET for build
       uses: actions/setup-dotnet@v1
+    - name: Setup .NET for GitVersion
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0.x'
     - name: Run GitVersion
       run: |
         dotnet tool install --global GitVersion.Tool
