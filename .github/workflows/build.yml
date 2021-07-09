@@ -25,5 +25,5 @@ jobs:
       run: dotnet build --no-restore -c RELEASE
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
-   - name: Pack
-     run: dotnet pack -c RELEASE -o ./out
+    - name: Pack
+      run: dotnet pack -c RELEASE -o ./out
